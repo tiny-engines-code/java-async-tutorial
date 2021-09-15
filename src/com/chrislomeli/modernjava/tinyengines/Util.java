@@ -2,11 +2,9 @@ package com.chrislomeli.modernjava.tinyengines;
 
 public class Util {
 
-    public static long delaySeconds = 1000L;
-
-    public static void delay() {
+    public static void delay(long milliSeconds) {
         try {
-            Thread.sleep(delaySeconds);
+            Thread.sleep(milliSeconds);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
